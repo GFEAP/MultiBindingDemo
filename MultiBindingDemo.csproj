@@ -78,7 +78,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ConverterDomain\BindingStringFormatConverter.cs" />
+    <Compile Include="ConverterDomain\CsvMultiValueConverter.cs" />
     <Compile Include="ConverterDomain\RadioButtonConverter.cs" />
     <Compile Include="MainWindowDomain\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
