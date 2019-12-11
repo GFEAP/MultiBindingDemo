@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B1782E68-3966-4A9F-9DDE-08400E96EDD4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MultiBindingDemo</RootNamespace>
-    <AssemblyName>MultiBindingDemo</AssemblyName>
+    <RootNamespace>GeeDemos.MultiBinding</RootNamespace>
+    <AssemblyName>GeeDemos.MultiBinding</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -70,7 +70,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindowDomain\MainWindow.xaml">
+    <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -78,16 +78,18 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ConverterDomain\CsvMultiValueConverter.cs" />
-    <Compile Include="ConverterDomain\RadioButtonConverter.cs" />
-    <Compile Include="MainWindowDomain\MainWindow.xaml.cs">
+    <Compile Include="ValueConverters\CsvMultiValueConverter.cs" />
+    <Compile Include="ValueConverters\RadioButtonConverter.cs" />
+    <Compile Include="ViewModels\RelayCommand.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainWindowDomain\MainWindowMockUps.cs" />
-    <Compile Include="MainWindowDomain\MainWindowViewModel.cs" />
+    <Compile Include="DataMockups\MainWindowMockUps.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

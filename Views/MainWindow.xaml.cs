@@ -13,20 +13,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MultiBindingDemo.MainWindowDomain
+namespace GeeDemos.MultiBinding.Views
 {
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
-
-        MainWindowViewModel vm;
+    {      
         public MainWindow()
         {
             InitializeComponent();
-            vm = new MainWindowViewModel();
-            DataContext = vm;
+            
         }
     }
 }

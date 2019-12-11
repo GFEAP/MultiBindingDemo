@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Windows.Data;
 
-namespace MultiBindingDemo.ConverterDomain
+namespace GeeDemos.MultiBinding.ValueConverters
 {
     public class RadioButtonConverter : IValueConverter
     {
+
+        public static RadioButtonConverter Default = new RadioButtonConverter();
+
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (EqualityComparer<double>.Default.Equals((double)value,(double)parameter))
+            if (EqualityComparer<double>.Default.Equals((double)value, (double)parameter))
             {
                 return true;
             }

@@ -4,10 +4,12 @@ using System.Globalization;
 using System.Linq;
 using System.Windows.Data;
 
-namespace MultiBindingDemo.ConverterDomain
+namespace GeeDemos.MultiBinding.ValueConverters
 {
     public class CsvMultiValueConverter : IMultiValueConverter
     {
+        public static CsvMultiValueConverter Default = new CsvMultiValueConverter();
+
         /// <summary>
         /// 
         /// </summary>
@@ -22,7 +24,7 @@ namespace MultiBindingDemo.ConverterDomain
             // no foreach here, use index i to determine when to append ;
             for (int i = 0; i < values.Length; i++)
             {
-                if (i > 0) s += ";";    //avoid dangling ; at the end of the string
+                if (i > 0) s += ";";    //avoid dangling ";" at the end of the string
                 s += (string)values[i];
             }
             return s;

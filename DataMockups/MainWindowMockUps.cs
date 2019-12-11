@@ -1,13 +1,14 @@
-﻿
-namespace MultiBindingDemo.MainWindowDomain
+﻿using GeeDemos.MultiBinding.ViewModels;
+
+namespace GeeDemos.MultiBinding.DataMockups
 {
     public static class MainWindowMockUps
     {
-        public static MainWindowViewModel MainWindowViewModelMockUp
+        public static MainViewModel MainViewModelMockUp
         {
             get
             {
-                return new MainWindowViewModel()
+                return new MainViewModel()
                 {
                     Text1 = "1",
                     Text2 = "2",

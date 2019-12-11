@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiBindingDemo", "MultiBindingDemo.csproj", "{B1782E68-3966-4A9F-9DDE-08400E96EDD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeeDemos.MultiBindingApp", "GeeDemos.MultiBindingApp.csproj", "{B1782E68-3966-4A9F-9DDE-08400E96EDD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
